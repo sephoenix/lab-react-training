@@ -58,11 +58,36 @@
   flex-direction: column;
   align-items: center;
   background-color: blue;
+  height: max-content;
 }
 
 img{
   padding: 5px;
-  border-radius: 50%;
+  border-radius: 5%;
   height: 240px;
+  width: 300px;
+}
+
+button{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10%;
+  color: white;
+}
+
+.rgb{
+  width: 100%;
+  height: 40px;
+}
+
+.creditCards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.creditCard{
+  text-align: center;
   width: 360px;
+  height: 240px;
 }

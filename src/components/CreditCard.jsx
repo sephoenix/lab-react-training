@@ -23,8 +23,8 @@ function CreditCard({
   }
 
   return (
-    <div className="card">
-      <div style={divStyle}>
+    <div className='creditCards'>
+      <div className="creditCard" style={divStyle}>
         <h4>{type}</h4>
         <h4>{newNumber}</h4>
         <h4>

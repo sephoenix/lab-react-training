@@ -6,14 +6,14 @@ function BoxColor({ r, g, b }) {
   };
   if (r >= 0 && r <= 255 && g >= 0 && g <= 255 && b >= 0 && b <= 255) {
     return (
-      <div className="card">
-        <div style={divStyle}>
+      <div>
+        <div className='rgb' style={divStyle}>
           rgb({r},{g},{b})
         </div>
       </div>
     );
   } else {
-    return <div className="card">'Select a valid RGB color'</div>;
+    return <div className="rgb">'Select a valid RGB color'</div>;
   }
 }
 
