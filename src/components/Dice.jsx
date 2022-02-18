@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import dice0 from '../assets/images/dice-empty.png';
 import dice1 from '../assets/images/dice1.png';
@@ -12,10 +12,14 @@ function Dice() {
   const diceArray = [dice0, dice1, dice2, dice3, dice4, dice5, dice6];
   const [dice, setDice] = useState(dice0);
 
+  const updateDice = diceArray[Math.floor(Math.random() * diceArray.length)];
+
   const handleClick = () => {
-    setDice(diceArray[Math.floor(Math.random() * diceArray.length)]);
+    setDice(dice0);
+    setTimeout(() => {
+      setDice(updateDice);
+    }, 1000);
   };
-  console.log(dice);
 
   return (
     <div onClick={handleClick}>

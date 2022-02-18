@@ -11,7 +11,6 @@ function ClickablePicture() {
       return setImage(imgClicked);
     } else if (image === imgClicked) {
       return setImage(img);
-      console.log(image);
     }
   };
 
