@@ -13,6 +13,8 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
 
+import profiles from './data/berlin.json';
+
 const cardArray = [
   {
     lastName: 'Doe',
@@ -162,7 +164,20 @@ function App() {
         ]}
       />
       <NumbersTable limit={12} />
-      <Facebook />
+      {profiles.map((profile, i) => {
+        return (
+          <>
+            <Facebook
+              img={profile.img}
+              key={i}
+              lastName={profile.lastName}
+              firstName={profile.firstName}
+              country={profile.country}
+              isStudent={profile.isStudent}
+            />
+          </>
+        );
+      })}
     </div>
   );
 }

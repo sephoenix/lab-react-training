@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import dice0 from '../assets/images/dice-empty.png';
 import dice1 from '../assets/images/dice1.png';
